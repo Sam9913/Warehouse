@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Warehouse</string>
+    <string name="scan">Scan</string>
+    <string name="receive_material">Receive Material</string>
+    <string name="check_rack">Check Material Rack</string>
+    <string name="welcome">HOTAYI</string>
+    <string name="issue">Issue to Production</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_email">Enter your email</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="confirm_new_password">Confirm New Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="receive">Receive</string>
+    <string name="quantity">Quantity :</string>
+    <string name="part_no">Part No :</string>
+    <string name="report">Report</string>
+    <string name="check">Check</string>
+    <string name="serial_no">Serial No :</string>
+    <string name="rack_out">Rack Out</string>
+    <string name="rack_name">Rack Name :</string>
+    <string name="enter_issue">Enter Issue</string>
+</resources>

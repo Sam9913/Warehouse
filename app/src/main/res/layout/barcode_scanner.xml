@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+        app:maskColor="#77000000">
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/txtViewTemp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtPartNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/part_no" />
+
+    <TextView
+        android:id="@+id/txtQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/quantity" />
+
+    <TextView
+        android:id="@+id/txtSerialNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/serial_no" />
+
+    <TextView
+        android:id="@+id/txtRack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="8dp" />
+
+
+    <EditText
+        android:id="@+id/txtIssue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/enter_issue"
+        android:inputType="textMultiLine" />
+
+    <LinearLayout
+        android:id="@+id/issueLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/txtvwQty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:text="@string/receive" />
+    </LinearLayout>
+
+</LinearLayout>
